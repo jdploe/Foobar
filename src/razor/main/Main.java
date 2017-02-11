@@ -1,17 +1,21 @@
 package razor.main;
 
+import java.util.List;
+
 import razor.edge.Edge;
 import razor.handle.Handle;
+import razor.util.file.FileIO;
+import razor.util.web.WebUtility;
 
 public class Main {
 	public static void main(String [] args){
-		Handle handle = new Handle();
-		Edge edge = new Edge();
-		Edge edge1 = new Edge();
-		handle.addEdge(edge);
+
+		FileIO fileio = new FileIO();
+		List<String> urls = fileio.getURLs();
 		
+		WebUtility webUtility = new WebUtility();
+		webUtility.getImageTags(urls.get(0));
 		
-		System.out.println("Getting a Edge");
-		System.out.println("Got an Edge!");
+		System.out.println("DONE!!!!!!!!");
 	}
 }
