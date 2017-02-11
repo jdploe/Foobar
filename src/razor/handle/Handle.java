@@ -10,7 +10,7 @@ public class Handle {
 	private List<Edge> edges;
 	
 	public Handle(){
-		edges=new ArrayList<Edge>();
+		edges = new ArrayList<Edge>();
 	}
 	
 	public List<Edge> getEdges(){
